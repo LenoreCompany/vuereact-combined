@@ -1,7 +1,7 @@
 {
   "name": "@lenore-company/vuereact-combined",
   "private": false,
-  "version": "1.2.19",
+  "version": "1.2.20",
   "description": "Vue和React快捷集成的工具包，并且适合复杂的集成场景",
   "main": "dist/vuereact.umd.js",
   "module": "dist/vuereact.esm.js",
@@ -24,8 +24,8 @@
   ],
   "homepage": "https://github.com/devilwjp/vuereact-combined#readme",
   "peerDependencies": {
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
     "vue": "^2.6.0"
   },
   "devDependencies": {
@@ -37,8 +37,8 @@
     "@babel/preset-react": "^7.7.4",
     "babel-preset-latest": "^6.24.1",
     "cross-env": "^10.0.0",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
     "rollup": "^1.27.5",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
