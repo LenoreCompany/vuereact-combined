@@ -3,6 +3,8 @@ import applyVueInReact, { VueContainer } from "./applyVueInReact"
 import options, { setOptions } from "./options"
 import { createPortal } from "react-dom"
 import ReactDOM from 'react-dom'
+import { createRoot } from "react-dom/client"
+
 // vueRootInfo是为了保存vue的root节点options部分信息，现在保存router、store，在applyVueInReact方法中创建vue的中间件实例时会被设置
 // 为了使applyReactInVue -> applyVueInReact之后的vue组件依旧能引用vuex和vue router
 import vueRootInfo from "./vueRootInfo"
@@ -587,7 +589,7 @@ export default function applyReactInVue(component, options = {}) {
             if (ReactDOM.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED !== undefined) {
               ReactDOM.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.usingClientEntryPoint = true
             }
-            this.__veauryReactApp__ = ReactDOM.createRoot(container)
+            this.__veauryReactApp__ = createRoot(container)
             this.__veauryReactApp__.render(reactRootComponent)
             return
           }
